@@ -1,0 +1,805 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color:#80aee9;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav {
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    transition: .4s;
+}
+
+
+
+nav ul {
+   list-style: none;
+   text-decoration: none;
+   padding: 0;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 30px 0 15px 25px;
+
+}
+
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
+
+}
+
+
+.mode{
+    margin-left: 1px;
+    font-size: 20px;
+}
+
+
+.mode-text {
+    padding-left: 13px;
+}
+
+nav ul li a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    width: 280px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 17px;
+}
+
+
+li a:hover {
+    background-color: #eee;
+}
+
+
+nav i {
+  font-size: 20px;
+  width: 58px;
+  height: 17px;
+  
+}
+
+
+span.nav-text {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#b8cae0;
+}
+
+
+
+ .main-top {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color: rgb(85, 83, 83);
+}
+
+
+.nav-bar {
+    display: none;
+}
+
+
+.main-top i {
+    position: relative;
+    right: -590px;
+    cursor: pointer;
+}
+
+
+.main-top h1 {
+    position: relative;
+    left: -320px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.main-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 135px;
+    margin-top: 5px;
+}
+
+
+.card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(85, 83, 83);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+
+.main-skills .card i {
+    font-size: 25px;
+    margin-bottom: 5px;
+    
+}
+
+
+.main-skills .card h3 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.main-skills .card p {
+    font-size: 13px;
+}
+
+
+.main-skills .card .btn {
+    background-color: #f54f33;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.main-skills .card .btn:hover {
+    background-color: rgb(71, 69, 69);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    transition: all 300ms ease;
+}
+
+
+
+.main-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 130px;
+}
+
+
+.main-course h1  {
+    position: relative;
+    left: -5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+
+.course-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+
+.course-box ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: -30px;
+    gap: 15px;
+}
+
+
+.active {
+    color: #000 !important ; 
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+
+
+
+.course-box li {
+    font-size: 18px;
+    color: rgb(85, 83, 83);
+    cursor: pointer;
+}
+
+
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box {
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    width: 280px;
+    height: 160px;
+    padding: 20px 15px;
+    margin: 6px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.box h3 {
+    margin-top: 20px;
+}
+
+.box p {
+    margin-top: -5px;
+    font-size: 13px;
+}
+
+
+.box i {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 15px;
+    font-size: 70px;
+    position: relative;
+    top: -50px;
+}
+
+
+.box .bot {
+   background-color: #000;
+   border: none;
+   padding: 10px;
+   border-radius: 10px;
+   font-weight: bold;
+   text-transform: capitalize;
+   width: 100%;
+   max-width: 80px;
+   cursor: pointer;
+   color: aliceblue;
+   position: relative;
+   top: 30px;
+}
+
+
+.box .bot:hover {
+    background-color: #cd2c0f;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+
+    nav {
+        position: fixed;
+        width: 33%;
+    }
+    
+    
+    
+    nav ul {
+       list-style: none;
+       text-decoration: none;
+       margin-left: -8px;
+    }
+    
+    
+    
+    .logo {
+        gap: 15px;
+        margin: 20px 0 10px 22px;
+    }
+    
+    
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    
+    .logo-text {
+        font-size: 13px;
+    }
+    
+    
+    nav ul li a {
+        padding: 7px;
+        margin: 20px;
+    }
+
+
+    nav i {
+        font-size: 10px;
+        height: 20px;
+      }
+
+
+    .li-color {
+        margin-left: 5px;
+        
+    }
+
+
+      .mode{
+        padding-left: 22px;
+        font-size: 16px;
+    }
+    
+    
+    .mode-text {
+        padding-left: 25px;
+        padding-top: -30px;
+        font-size: 10px;
+    }
+      
+      
+    span.nav-text {
+          padding-left: 5px;
+      }
+      
+      
+      
+      .main {
+          width: 67%;
+      } 
+
+
+      
+      .main-top i {
+        right: -190px;
+    }
+    
+    
+    .main-top h1 {
+        left: -20px;
+        font-size: 20px;
+    }
+    
+      
+      
+      .main-skills {
+          flex-direction: column;
+          left: 90px;
+          margin-top: 10px;
+      }
+
+
+      .card {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px 40px;
+    }
+    
+    
+    .main-skills .card i {
+        font-size: 25px;        
+    }
+    
+    
+    .main-skills .card h3 {
+        font-size: 15px;
+    }
+    
+    
+    .main-skills .card p {
+        font-size: 12px;
+    }
+    
+    
+    .main-skills .card .btn {
+        max-width: 100px;
+        font-size: 10px;
+    }
+    
+    
+    
+    .main-course {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 95px;
+    }
+    
+    
+    .main-course h1  {
+        position: relative;
+        left: -5px;
+        font-size: 18px;
+    }
+    
+    
+    .course-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 10px 5px;
+    }
+
+
+    .course-box ul {
+        position: relative;
+        left: -30px;
+        gap: 10px;
+    }
+    
+    
+    
+    .course-box li {
+        font-size: 14px;
+    }
+    
+    
+    
+    .course {
+        flex-direction: column;
+    }
+    
+    
+    .box {
+        width: 250px;
+        padding: 0px 20px;
+        margin: 10px;
+    }
+    
+    
+    .box h3 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .box p {
+        margin-top: -5px;
+        font-size: 12px;
+    }
+    
+    
+    .box i {
+        margin-right: 15px;
+        font-size: 50px;
+        top: -50px;
+    }
+    
+    
+    .box .bot {
+       font-size: 12px;
+       position: relative;
+       top: 30px;
+    }
+         
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+
+    
+    nav {
+        width: 45%;
+        left: -300px;
+        z-index: 50;
+        top: 55px;
+        transition: 0.5s;
+    }
+
+
+    nav.active {
+        left: 0;
+    }
+    
+    
+    
+    nav ul {
+       margin-left: -15px;
+    }
+    
+    
+    
+    .logo {
+        gap: 13px;
+        margin: 20px 0 10px 30px;
+    }
+    
+    
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+    .logo-text {
+        font-size: 13px;
+    }
+    
+
+    nav ul li a {
+        padding: 10px;
+        margin: 25px;
+    }
+
+
+    nav i {
+        font-size: 17px;
+        height: 17px;
+      }
+
+
+    .nav-text {
+        margin-left: -5px;
+    }
+      
+      
+      span.nav-text {
+          font-size: 13px;
+          padding-left: 5px;
+      }
+
+
+    .li-color {
+        margin-left: 4px;
+    }
+
+
+    .mode{
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    
+    
+    .mode-text {
+        padding-left: 1px;
+        margin-top: 2px;
+        font-size: 13px;
+    }
+
+      
+      .main {
+          width: 100%;
+      } 
+
+
+     
+    .main-top {
+        background-color: #fff;
+        padding: 7px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+    }
+
+
+    .nav-bar{
+        display: block;
+        position: absolute;
+        left: -160px;
+        cursor: pointer;
+    }
+    
+    
+    .nav-bar i {
+        font-size: 23px;
+    }
+
+
+    .main-top {
+        width: 100%;
+    }
+
+    
+    #gear {
+        right: -150px;
+    }
+    
+    
+    .main-top h1 {
+        left: 10px;
+        font-size: 15px;
+    }
+    
+      
+      
+      .main-skills {
+          left: 5px;
+          margin-top: 80px;
+      }
+
+
+    .card {
+        margin: 5px;
+        padding: 20px 40px;
+    }
+    
+    
+    .main-skills .card h3 {
+        font-size: 15px;
+    }
+    
+    
+    .main-skills .card p {
+        font-size: 12px;
+    }
+    
+    
+    .main-skills .card .btn {
+        padding: 8px;
+        max-width: 90px;
+        font-size: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    .main-course {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 7px;
+    }
+    
+    
+    .main-course h1  {
+        position: relative;
+        left: 100px;
+        font-size: 18px;
+    }
+
+
+    .course-box {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        
+    }
+
+    
+
+
+    .course-box ul {
+        position: relative;
+        left: -30px;
+        gap: 10px;
+    }
+    
+    
+    
+    .course-box li {
+        font-size: 12px;
+    }
+    
+    
+    
+    .box {
+        width: 250px;
+        margin: 6px;
+    }
+    
+    
+    .box h3 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .box p {
+        
+        font-size: 12px;
+    }
+    
+    
+    .box i {
+        font-size: 50px;
+    }
+    
+    
+    .box .bot {
+       max-width: 80px;
+       font-size: 12px;
+       position: relative;
+       top: 30px;
+    }   
+    
+}
+
+
+@media screen and (max-width: 360px) {
+    #gear {
+        right: -145px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    #gear {
+        right: -135px;
+    }
+
+
+    .nav-bar {
+        left: -170px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        margin: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
